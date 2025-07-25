@@ -4,37 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bhargavi Tandra Portfolio</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Bhargavi Tandra</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="header-bottom">
-        <div class="photo-placeholder">#</div>
-            <p class="summary">
-            Enthusiastic and technically strong Front-End Developer with expertise in HTML, CSS, JavaScript, Angular, React, Node.js, Java, and Python. Passionate about building clean, functional, and scalable web applications.
-            </p>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="nav-wrapper">
+      <h1 class="logo">Bhargavi Tandra</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+</header>
+    </div>
+    <div class="hero">
+      <div class="hero-photo">#</div>
+      <div class="hero-text">
+        <h2>Hello, I'm Bhargavi Tandra</h2>
+        <p class="hero-summary">
+          Enthusiastic and technically strong Front-End Developer with expertise in HTML, CSS, JavaScript, Angular, React, Node.js, Java, and Python. Passionate about building clean, functional, and scalable web applications.
+        </p>
+      </div>
+    </div>
+  
 
   <main>
-    <section id="about">
+    <section id="about" class="section card">
       <h2>About Me</h2>
       <p>
         I'm <strong>Bhargavi Tandra</strong>, a passionate Front-End and Full Stack Web Developer based in Denton, Texas.
@@ -46,7 +47,7 @@
       </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section card">
       <h2>Skills</h2>
       <h3>Frontend</h3>
       <p>HTML5, CSS3, JavaScript, Angular, React</p>
@@ -64,9 +65,8 @@
       <p>Git, GitHub, GitLab, VS Code, Postman, Jira, Agile/Scrum</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section card">
       <h2>Experience</h2>
-
       <div class="job">
         <h3>Security Analyst – Wipro</h3>
         <p><em>Jan 2022 – Dec 2022</em></p>
@@ -88,63 +88,60 @@
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="section card">
       <h2>Education</h2>
-
       <div class="education-item">
         <h3>Master of Science in Technology – Information Technology</h3>
         <p><em>Pittsburg State University, Kansas (Aug 2022 – May 2024)</em></p>
       </div>
-
       <div class="education-item">
         <h3>Bachelor of Technology – Computer Science and Engineering</h3>
         <p><em>Malla Reddy Institute of Technology, Telangana, India (Aug 2017 – May 2021)</em></p>
       </div>
     </section>
 
-    <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Movie Site</strong><br />
-        A dynamic movie website built with HTML, CSS, and JavaScript. It features movie search functionality, displays detailed movie information, and integrates APIs to show trailers and images. The site is fully responsive, providing a seamless user experience on all devices.<br />
-        GitHub Repo: <a href="https://github.com/Tandra2821/Movie-Site" target="_blank">https://github.com/Tandra2821/Movie-Site</a><br />
-        Live Demo: <a href="https://tandra2821.github.io/Movie-Site/" target="_blank">https://tandra2821.github.io/Movie-Site/</a>
-      </li>
-      <li>
-        <strong>Word Duel Game</strong><br />
-        A real-time multiplayer word game developed using HTML, CSS, and JavaScript. The game includes features like countdown timers, word validation, scoring, and state synchronization using localStorage and event listeners. Players can compete in rounds with persistent high scores stored in the browser.<br />
-        GitHub Repo: <a href="https://github.com/Tandra2821/wordDuel" target="_blank">https://github.com/Tandra2821/wordDuel</a><br />
-        Live Demo: <a href="https://tandra2821.github.io/wordDuel/" target="_blank">https://tandra2821.github.io/wordDuel/</a>
-      </li>
-      <li>
-        <strong>Graduation Ceremony Website</strong><br />
-        A clean, responsive event website built with HTML and CSS. It showcases graduation ceremony details through images, audio, and video content, combined with an interactive layout and easy navigation.<br />
-        GitHub Repo: <a href="https://github.com/Tandra2821/Graduation-Ceremony-site" target="_blank">https://github.com/Tandra2821/Graduation-Ceremony-site</a><br />
-        Live Demo: <a href="https://tandra2821.github.io/Graduation-Ceremony-site/" target="_blank">https://tandra2821.github.io/Graduation-Ceremony-site/</a>
-      </li>
-      <li>
-        <strong>Food Delivery Website</strong><br />
-        Built a full-fledged food delivery website using HTML, CSS, JavaScript, and Bootstrap. Implemented responsive layouts for both mobile and desktop using Bootstrap and optimized the UI with image and video content for an engaging user experience.
-      </li>
-    </ul>
-  </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><i class="fas fa-map-marker-alt"></i> Denton, Texas</p>
-        <p><i class="fas fa-phone"></i> (940) 277-6166</p>
-        <p><i class="fas fa-envelope"></i> 
-            <a href="mailto:bhargavi.tandra028@gmail.com">bhargavi.tandra028@gmail.com</a>
-        </p>
-        <p><i class="fab fa-linkedin"></i> 
-            <a href="https://www.linkedin.com/in/bhargavi-tandra" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
-        <p><i class="fab fa-github"></i> 
-            <a href="https://github.com/Tandra2821" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </p>
+    <section id="projects" class="section card">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Movie Site</h3>
+          <p>Search and display movie details using external APIs. Responsive and interactive interface.</p>
+          <a href="https://github.com/Tandra2821/Movie-Site" target="_blank">Repo</a> |
+          <a href="https://tandra2821.github.io/Movie-Site/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Word Duel Game</h3>
+          <p>Real-time multiplayer word game using localStorage, JS timers, scoring, and state sync.</p>
+          <a href="https://github.com/Tandra2821/wordDuel" target="_blank">Repo</a> |
+          <a href="https://tandra2821.github.io/wordDuel/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Graduation Ceremony Website</h3>
+          <p>Clean, responsive website with image/audio/video content for graduation ceremony.</p>
+          <a href="https://github.com/Tandra2821/Graduation-Ceremony-site" target="_blank">Repo</a> |
+          <a href="https://tandra2821.github.io/Graduation-Ceremony-site/" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Food Delivery Website</h3>
+          <p>Built using HTML/CSS/JS with Bootstrap for responsiveness and media-rich UI.</p>
+        </div>
+      </div>
     </section>
 
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Denton, Texas</p>
+      <p><i class="fas fa-phone"></i> (940) 277-6166</p>
+      <p><i class="fas fa-envelope"></i>
+        <a href="mailto:bhargavi.tandra028@gmail.com">bhargavi.tandra028@gmail.com</a>
+      </p>
+      <p><i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/bhargavi-tandra" target="_blank">LinkedIn</a>
+      </p>
+      <p><i class="fab fa-github"></i>
+        <a href="https://github.com/Tandra2821" target="_blank">GitHub</a>
+      </p>
+    </section>
   </main>
 
 </body>

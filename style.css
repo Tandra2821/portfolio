@@ -1,85 +1,169 @@
-header {
-  background: #ffffff;
-  padding: 1.5rem 2rem 2rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
-  max-width: 900px;
-  margin: 2rem auto 3rem;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #222;
+/* Body with padding to avoid hiding content behind fixed navbar */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* same as navbar height */
 }
 
-/* Nav bar styling */
-nav ul {
+/* Fixed navbar */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* navbar height */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Navbar wrapper */
+.nav-wrapper {
+  height: 60px;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2.5rem;
-  padding-left: 0;
-  margin-bottom: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-nav ul li a {
-  font-weight: 600;
-  color: #4a90e2;
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #0077cc;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
   text-decoration: none;
-  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-  color: #e67e22;
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+/* Hero section below navbar */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 3rem 2rem;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  margin-top: 10px; /* optional spacing from navbar */
+}
+
+/* Hero photo placeholder */
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #666;
+  user-select: none;
+}
+
+/* Hero text */
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.hero-summary {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Section cards styling */
+.section.card {
+  background: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+/* Jobs and education spacing */
+.job, .education-item {
+  margin-bottom: 1.5rem;
+}
+
+.job ul {
+  margin-top: 0.5rem;
+  list-style: disc inside;
+  color: #444;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+}
+
+.project-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
   text-decoration: underline;
 }
 
-/* Container for photo + summary side by side */
-.header-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  max-width: 700px;
-  margin: 0 auto;
+/* Contact section icons */
+#contact i {
+  margin-right: 0.5rem;
+  color: #0077cc;
 }
 
-.photo-placeholder {
-  width: 140px;
-  height: 140px;
-  font-size: 90px;
-  line-height: 140px;
-  color: #4a90e2;
-  border: 3px solid #4a90e2;
-  border-radius: 50%;
-  user-select: none;
-  font-weight: 700;
-  flex-shrink: 0;
+#contact p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
 }
 
-.summary {
-  font-size: 1.15rem;
-  color: #555;
-  font-weight: 500;
-  max-width: 500px;
-  text-align: left;
+#contact a {
+  color: #0077cc;
+  text-decoration: none;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  .header-bottom {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .summary {
-    text-align: center;
-    max-width: 100%;
-  }
+#contact a:hover {
+  text-decoration: underline;
 }
