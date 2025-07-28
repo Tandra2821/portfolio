@@ -6,7 +6,6 @@ This website showcases my projects, skills, education, and contact information. 
 ## 🌐 Live Demo
 
 🔗 [View Portfolio Website](https://your-username.github.io/your-repo-name/)  
-> _Replace this link with your actual GitHub Pages link_
 
 ---
 
@@ -30,14 +29,6 @@ This website showcases my projects, skills, education, and contact information. 
 - **Font Awesome** for icons
 - **Google Fonts** (`Poppins`)
 - Hosted with **GitHub Pages**
-
----
-
-## 🖼️ Preview
-
-> Add a screenshot below (optional)
-
-![Screenshot](screenshot.png)
 
 ---
 
