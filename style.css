@@ -8,10 +8,12 @@
 /* Body with padding to avoid hiding content behind fixed navbar */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8;
+  background-color: #e6f0ff; /* soft clean blue */
   color: #333;
   line-height: 1.6;
-  padding-top: 60px; /* same as navbar height */
+  padding-top: 60px;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /* Fixed navbar */
@@ -62,40 +64,95 @@ body {
 
 /* Hero section below navbar */
 .hero {
-  display: flex;
+   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 2rem 2rem 3rem 2rem;
-  gap: 2rem;
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
-  margin-top: 10px; /* optional spacing from navbar */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 120px 40px 60px; /* top padding to avoid navbar overlap */
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url(""C:\Users\bharg\OneDrive\Desktop\Portfolio\hero bg1.jpeg"") no-repeat center center / cover;
 }
 
-/* Hero photo placeholder */
-.hero-photo {
-  width: 150px;
-  height: 150px;
-  background-color: #ddd;
+.hero-photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  color: #666;
-  user-select: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border: 5px solid #ffffff;
+  background-color: #eee;
+  transition: transform 0.3s ease;
 }
 
-/* Hero text */
+.hero-photo img:hover {
+  transform: scale(1.05);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  padding-left: 40px;
+}
+
 .hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
   color: #222;
+  margin-bottom: 1rem;
+}
+
+.hero-text h2 span {
+  color: #0077cc;
 }
 
 .hero-summary {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
   max-width: 600px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 119, 204, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Responsive - stack layout on small screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px 60px;
+  }
+
+  .hero-photo {
+    margin-bottom: 30px;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-summary {
+    margin: 0 auto 1.8rem;
+  }
 }
 
 /* Section cards styling */
