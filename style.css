@@ -73,9 +73,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-    url(""C:\Users\bharg\OneDrive\Desktop\Portfolio\hero bg1.jpeg"") no-repeat center center / cover;
+  
 }
 
 .hero-photo img {
